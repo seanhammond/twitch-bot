@@ -69,7 +69,8 @@ class Roboraj:
 								commands.update_last_used(command, channel)
 
 								if result:
-									resp = '(%s) > %s' % (username, result)
+									resp = '%s' % (result)
+
 									pbot(resp, channel)
 									irc.send_message(channel, resp)
 
@@ -86,8 +87,9 @@ class Roboraj:
 							)
 							commands.update_last_used(command, channel)
 
-							resp = '(%s) > %s' % (username, commands.get_return(command))
+							resp = '%s' % (commands.get_return(command))
 							commands.update_last_used(command, channel)
+							print type(resp)
 
 							pbot(resp, channel)
 							irc.send_message(channel, resp)

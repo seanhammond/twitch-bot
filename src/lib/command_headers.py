@@ -7,14 +7,8 @@ commands = {
 	},
 
 	'!randomemote': {
-		'limit': 180,
+		'limit': 0,
 		'argc': 0,
-		'return': 'command'
-	},
-
-	'!wow': {
-		'limit': 30,
-		'argc': 3,
 		'return': 'command'
 	},
 
@@ -22,6 +16,18 @@ commands = {
 		'limit': 0,
 		'argc': 0,
 		'return': 'John 3:16 - For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life'
+	},
+
+	'!plugdj': {
+		'limit': 10,
+		'argc': 0,
+		'return': 'https://plug.dj/sheezle/'
+	},
+
+	'!nick': {
+		'limit': 0,
+		'argc': 0,
+		'return': 'Hi, Im Nick and I love Bailey Jay!'
 	}
 }
 
